@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TimeSeriesChart from "./TimeSeriesChart";
-import nile from "./datasets/btcusd_day.json";
+import nile from "./datasets/nile.json";
 
 const App: React.FC = () => {
   const [rsSimple, setRsSimple] = useState(0);
