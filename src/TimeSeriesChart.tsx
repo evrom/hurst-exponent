@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  VictoryChart,
-  VictoryLine,
-  VictoryZoomContainer,
-  VictoryTheme,
-  VictoryAxis,
-} from "victory";
-import numeral from "numeral";
+import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 
 type Data = {
   y: number;
@@ -19,23 +12,16 @@ type Props = {
 
 const TimeSeriesChart: React.FC<Props> = (props: Props) => {
   return (
-    <VictoryChart
-    // theme={VictoryTheme.grayscale}
-    // containerComponent={<VictoryZoomContainer zoomDimension="x" />}
-    >
-      <VictoryAxis
-        dependentAxis
-        tickFormat={(tick) => numeral(tick).format("0a")}
+    <LineChart width={600} height={300} data={props.data}>
+      <Line type="linear" dot={false} dataKey="y" stroke="#8884d8" />
+      <XAxis
+        dataKey="x"
+        scale="time"
+        tickFormatter={(unixTime) => unixTime.getFullYear()}
       />
-      <VictoryAxis />
-
-      <VictoryLine
-        style={{
-          data: { stroke: "#c43a31", strokeWidth: 1 },
-        }}
-        data={props.data}
-      />
-    </VictoryChart>
+      <Tooltip />
+      <YAxis dataKey="y" />
+    </LineChart>
   );
 };
 
