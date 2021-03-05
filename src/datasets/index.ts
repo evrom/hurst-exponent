@@ -1,5 +1,6 @@
 import nile from "./nile.json";
-import btcusd from "./btcusd_day.json";
+import btc from "./btc.json";
+import corn from "./corn.json";
 
 type Data = {
   y: number;
@@ -8,7 +9,8 @@ type Data = {
 
 const datasets: Record<string, Data[]> = {
   nile: nile,
-  btcusd: btcusd,
+  btc: btc,
+  corn: corn,
 };
 
 type Metadata = {
@@ -19,8 +21,11 @@ const metadata: Record<string, Metadata> = {
   nile: {
     title: "Nile water levels 1871-1984",
   },
-  btcusd: {
+  btc: {
     title: "BTC/USD 2015-2021",
+  },
+  corn: {
+    title: "Corn futures opening 2015-2021",
   },
 };
 
