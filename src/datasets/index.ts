@@ -11,4 +11,17 @@ const datasets: Record<string, Data[]> = {
   btcusd: btcusd,
 };
 
-export default datasets;
+type Metadata = {
+  title: string;
+};
+
+const metadata: Record<string, Metadata> = {
+  nile: {
+    title: "Nile water levels 1871-1984",
+  },
+  btcusd: {
+    title: "BTC/USD 2015-2021",
+  },
+};
+
+export { datasets, metadata };
