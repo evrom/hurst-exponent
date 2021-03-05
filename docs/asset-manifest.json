@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/evrom/hurst-exponent/static/css/main.89eab166.chunk.css",
+    "main.js": "/evrom/hurst-exponent/static/js/main.1447fa97.chunk.js",
+    "main.js.map": "/evrom/hurst-exponent/static/js/main.1447fa97.chunk.js.map",
+    "runtime-main.js": "/evrom/hurst-exponent/static/js/runtime-main.c4ee6d0e.js",
+    "runtime-main.js.map": "/evrom/hurst-exponent/static/js/runtime-main.c4ee6d0e.js.map",
+    "static/css/2.2d70e426.chunk.css": "/evrom/hurst-exponent/static/css/2.2d70e426.chunk.css",
+    "static/js/2.6a8538cf.chunk.js": "/evrom/hurst-exponent/static/js/2.6a8538cf.chunk.js",
+    "static/js/2.6a8538cf.chunk.js.map": "/evrom/hurst-exponent/static/js/2.6a8538cf.chunk.js.map",
+    "static/js/3.7ee9b313.chunk.js": "/evrom/hurst-exponent/static/js/3.7ee9b313.chunk.js",
+    "497a1fd42b5ac42e643e.module.wasm": "/evrom/hurst-exponent/497a1fd42b5ac42e643e.module.wasm",
+    "static/js/3.7ee9b313.chunk.js.map": "/evrom/hurst-exponent/static/js/3.7ee9b313.chunk.js.map",
+    "index.html": "/evrom/hurst-exponent/index.html",
+    "static/css/2.2d70e426.chunk.css.map": "/evrom/hurst-exponent/static/css/2.2d70e426.chunk.css.map",
+    "static/css/main.89eab166.chunk.css.map": "/evrom/hurst-exponent/static/css/main.89eab166.chunk.css.map",
+    "static/js/2.6a8538cf.chunk.js.LICENSE.txt": "/evrom/hurst-exponent/static/js/2.6a8538cf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4ee6d0e.js",
+    "static/css/2.2d70e426.chunk.css",
+    "static/js/2.6a8538cf.chunk.js",
+    "static/css/main.89eab166.chunk.css",
+    "static/js/main.1447fa97.chunk.js"
+  ]
+}
