@@ -1,4 +1,3 @@
-import { rs_corrected } from "hurst";
 import React, { useState } from "react";
 
 type Props = {
