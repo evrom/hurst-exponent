@@ -12,13 +12,21 @@ const App: React.FC = () => {
       <h1>Hurst Exponent</h1>
       <p>
         The{" "}
-        <a href="https://en.wikipedia.org/wiki/Hurst_exponent">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://en.wikipedia.org/wiki/Hurst_exponent"
+        >
           Hurst Exponent
         </a>{" "}
         is a metric of the long term memory of a time series. Harold Edwin Hurst
         developed the technique, and Benoît Mandelbrot explored it further. For
         an introduction to the topic, see{" "}
-        <a href="http://dx.doi.org/10.3390/e19090437">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="http://dx.doi.org/10.3390/e19090437"
+        >
           {`"`}A brief history of long memory: Hurst, Mandelbrot and the road to
           ARFIMA{`"`} (2017)
         </a>
@@ -45,7 +53,14 @@ const App: React.FC = () => {
         data={new Float64Array(datasets[datasetName].data.map(({ y }) => y))}
       ></HurstEstimations>
       <p>
-        calculated using <a href="https://crates.io/crates/hurst">Hurst</a>{" "}
+        calculated using{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://crates.io/crates/hurst"
+        >
+          Hurst
+        </a>{" "}
         compiled to WebAssembly
       </p>
       <h2>Interpretation</h2>
