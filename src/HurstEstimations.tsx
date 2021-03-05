@@ -1,3 +1,4 @@
+import { rs_corrected } from "hurst";
 import React, { useState } from "react";
 
 type Props = {
@@ -14,10 +15,18 @@ const HurstEstimations: React.FC<Props> = ({ data }: Props) => {
   });
 
   return (
-    <>
-      <div>{rsSimple}</div>
-      <div>{rsCorrected}</div>
-    </>
+    <table>
+      <tbody>
+        <tr>
+          <th>Hurst Exponent from Rescaled Range</th>
+          <td>{rsCorrected}</td>
+        </tr>
+        <tr>
+          <th>Simplified rescaled range</th>
+          <td>{rsSimple}</td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 
