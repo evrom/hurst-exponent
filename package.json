@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/evrom/hurst-exponent"
   },
-  "homepage": "https://github.com/evrom/hurst-exponent",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
