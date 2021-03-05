@@ -22,6 +22,7 @@ const App: React.FC = () => {
           {`"`}A brief history of long memory: Hurst, Mandelbrot and the road to
           ARFIMA{`"`} (2017)
         </a>
+        .
       </p>
       {Object.entries(datasets).map(([k, { title }]) => {
         return (
@@ -50,24 +51,25 @@ const App: React.FC = () => {
       <h2>Interpretation</h2>
       <ul>
         <li>
-          H {"="} 0.5, then the time series is Brownian. Meaning there is no
+          <b>H = 0.5</b>, then the time series is Brownian. Meaning there is no
           detectable long term memory, and each change in value appears to be
           random and not autocorrelated
         </li>
         <li>
-          H {"<"} 0.5, then the time series is negatively autocorrelated. I.e.
-          there is a negative feedback loop. A high value signifies a low value
-          with come in the future, while a low value signifies a high value in
-          the future.
+          <b>H {"<"} 0.5</b>, then the time series is negatively autocorrelated.
+          I.e. there is a negative feedback loop. A high value signifies a low
+          value with come in the future, while a low value signifies a high
+          value in the future.
         </li>
         <li>
-          H {">"} 0.5, then the time series is positively autocorrelated. I.e. A
-          high value signifies a higher value with come in the future, while a
-          low value signifies a lower value in the future. Most real world time
-          series have a Hurst exponent above 0.5, and often around 0.72.
-          Financial data tends to be higher than natural phenomena, because
-          there are more positive feedback loops, less negative loops, and --
-          for pricing -- the inflation pushes the value upward exponentially.
+          <b>H {">"} 0.5</b>, then the time series is positively autocorrelated.
+          I.e. A high value signifies a higher value with come in the future,
+          while a low value signifies a lower value in the future. Most real
+          world time series have a Hurst exponent above 0.5, and often around
+          0.72. Financial data tends to be higher than natural phenomena,
+          because there are more positive feedback loops, less negative loops,
+          and -- for pricing -- the inflation pushes the value upward
+          exponentially.
         </li>
       </ul>
     </div>
