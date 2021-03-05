@@ -20,21 +20,23 @@ type Props = {
 
 const TimeSeriesChart: React.FC<Props> = (props: Props) => {
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <LineChart width={600} height={300} data={props.data}>
-        <Line type="linear" dot={false} dataKey="y" stroke="#8884d8" />
-        <XAxis
-          dataKey="x"
-          scale="time"
-          tickFormatter={(tick) => tick.getFullYear()}
-        />
-        <Tooltip />
-        <YAxis
-          dataKey="y"
-          tickFormatter={(tick) => numeral(tick).format("0a")}
-        />
-      </LineChart>
-    </ResponsiveContainer>
+    <div className="chart-container">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart width={600} height={300} data={props.data}>
+          <Line type="linear" dot={false} dataKey="y" stroke="#8884d8" />
+          <XAxis
+            dataKey="x"
+            scale="time"
+            tickFormatter={(tick) => tick.getFullYear()}
+          />
+          <Tooltip />
+          <YAxis
+            dataKey="y"
+            tickFormatter={(tick) => numeral(tick).format("0a")}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
   );
 };
 

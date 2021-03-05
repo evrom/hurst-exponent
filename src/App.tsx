@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import TimeSeriesChart from "./TimeSeriesChart";
+import HurstEstimations from "./HurstEstimations";
 import nile from "./datasets/nile.json";
 
 const App: React.FC = () => {
@@ -15,16 +16,14 @@ const App: React.FC = () => {
   });
   return (
     <div className="App">
-      <div className="chart-container">
-        <TimeSeriesChart
-          data={nile.map(({ x, y }) => {
-            return { x: new Date(x), y: y };
-          })}
-        />
-      </div>
-
-      <div>{rsSimple}</div>
-      <div>{rsCorrected}</div>
+      <TimeSeriesChart
+        data={nile.map(({ x, y }) => {
+          return { x: new Date(x), y: y };
+        })}
+      />
+      <HurstEstimations
+        data={new Float64Array(nile.map(({ y }) => y))}
+      ></HurstEstimations>
     </div>
   );
 };
