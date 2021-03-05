@@ -1,7 +1,16 @@
 {
   "name": "hurst-exponent",
   "version": "0.1.0",
+  "collaborators": [
+    "Evan Roman <evanroman1@gmail.com>"
+  ],
   "private": true,
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evrom/hurst-exponent"
+  },
+  "homepage": "https://github.com/evrom/hurst-exponent",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
