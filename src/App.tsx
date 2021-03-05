@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./App.css";
 import TimeSeriesChart from "./TimeSeriesChart";
-import nile from "./datasets/btcusd_day.json";
+import nile from "./datasets/nile.json";
 
 const App: React.FC = () => {
   const [rsSimple, setRsSimple] = useState(0);
@@ -14,11 +15,14 @@ const App: React.FC = () => {
   });
   return (
     <div className="App">
-      <TimeSeriesChart
-        data={nile.map(({ x, y }) => {
-          return { x: new Date(x), y: y };
-        })}
-      />
+      <div className="chart-container">
+        <TimeSeriesChart
+          data={nile.map(({ x, y }) => {
+            return { x: new Date(x), y: y };
+          })}
+        />
+      </div>
+
       <div>{rsSimple}</div>
       <div>{rsCorrected}</div>
     </div>
