@@ -1,6 +1,6 @@
 # Hurst Exponent
 
-View estimated hurst exponent of time series data.
+View estimated Hurst exponent of time series data.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
