@@ -2,6 +2,8 @@
 
 View estimated Hurst exponent of time series data.
 
+Live version here: [https://hurstexponent.com/](https://hurstexponent.com/)
+
 This project calculates the hurst exponent using [Hurst](https://github.com/evrom/hurst) compiled to WebAssembly.
 
 ## Available Scripts
